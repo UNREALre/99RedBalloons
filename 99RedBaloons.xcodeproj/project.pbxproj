@@ -14,6 +14,11 @@
 		50F4F55F1A56E29F00D5CC68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F55E1A56E29F00D5CC68 /* Images.xcassets */; };
 		50F4F5621A56E29F00D5CC68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F5601A56E29F00D5CC68 /* LaunchScreen.xib */; };
 		50F4F56E1A56E2A000D5CC68 /* _9RedBaloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4F56D1A56E2A000D5CC68 /* _9RedBaloonsTests.swift */; };
+		50F4F57C1A56E39C00D5CC68 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F5781A56E39C00D5CC68 /* 1.jpg */; };
+		50F4F57D1A56E39C00D5CC68 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F5791A56E39C00D5CC68 /* 2.jpg */; };
+		50F4F57E1A56E39C00D5CC68 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F57A1A56E39C00D5CC68 /* 3.jpg */; };
+		50F4F57F1A56E39C00D5CC68 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F4F57B1A56E39C00D5CC68 /* 4.jpg */; };
+		50F4F5811A56E44400D5CC68 /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4F5801A56E44400D5CC68 /* Balloon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		50F4F5671A56E2A000D5CC68 /* 99RedBaloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99RedBaloonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4F56C1A56E2A000D5CC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F4F56D1A56E2A000D5CC68 /* _9RedBaloonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9RedBaloonsTests.swift; sourceTree = "<group>"; };
+		50F4F5781A56E39C00D5CC68 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		50F4F5791A56E39C00D5CC68 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		50F4F57A1A56E39C00D5CC68 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		50F4F57B1A56E39C00D5CC68 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		50F4F5801A56E44400D5CC68 /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 				50F4F5541A56E29F00D5CC68 /* AppDelegate.swift */,
 				50F4F5591A56E29F00D5CC68 /* ViewController.swift */,
 				50F4F55B1A56E29F00D5CC68 /* Main.storyboard */,
+				50F4F5801A56E44400D5CC68 /* Balloon.swift */,
 				50F4F55E1A56E29F00D5CC68 /* Images.xcassets */,
 				50F4F5601A56E29F00D5CC68 /* LaunchScreen.xib */,
 				50F4F5561A56E29F00D5CC68 /* _9RedBaloons.xcdatamodeld */,
@@ -93,6 +104,7 @@
 		50F4F5521A56E29F00D5CC68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50F4F5771A56E39C00D5CC68 /* baloons */,
 				50F4F5531A56E29F00D5CC68 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +125,17 @@
 				50F4F56C1A56E2A000D5CC68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50F4F5771A56E39C00D5CC68 /* baloons */ = {
+			isa = PBXGroup;
+			children = (
+				50F4F5781A56E39C00D5CC68 /* 1.jpg */,
+				50F4F5791A56E39C00D5CC68 /* 2.jpg */,
+				50F4F57A1A56E39C00D5CC68 /* 3.jpg */,
+				50F4F57B1A56E39C00D5CC68 /* 4.jpg */,
+			);
+			path = baloons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F4F55D1A56E29F00D5CC68 /* Main.storyboard in Resources */,
+				50F4F57F1A56E39C00D5CC68 /* 4.jpg in Resources */,
+				50F4F57C1A56E39C00D5CC68 /* 1.jpg in Resources */,
+				50F4F57D1A56E39C00D5CC68 /* 2.jpg in Resources */,
+				50F4F57E1A56E39C00D5CC68 /* 3.jpg in Resources */,
 				50F4F5621A56E29F00D5CC68 /* LaunchScreen.xib in Resources */,
 				50F4F55F1A56E29F00D5CC68 /* Images.xcassets in Resources */,
 			);
@@ -218,6 +245,7 @@
 				50F4F55A1A56E29F00D5CC68 /* ViewController.swift in Sources */,
 				50F4F5581A56E29F00D5CC68 /* _9RedBaloons.xcdatamodeld in Sources */,
 				50F4F5551A56E29F00D5CC68 /* AppDelegate.swift in Sources */,
+				50F4F5811A56E44400D5CC68 /* Balloon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
