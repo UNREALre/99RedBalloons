@@ -19,24 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var firstBall = Balloon()
-        firstBall.balloonImage = UIImage(named: "1.jpg")
-        firstBall.balloonNumber = 5
-        
-        var secondBall = Balloon()
-        secondBall.balloonImage = UIImage(named: "2.jpg")
-        secondBall.balloonNumber = 15
-        
-        var thirdBall = Balloon()
-        thirdBall.balloonImage = UIImage(named: "3.jpg")
-        thirdBall.balloonNumber = 25
-        
-        var fourthBall = Balloon()
-        fourthBall.balloonImage = UIImage(named: "4.jpg")
-        fourthBall.balloonNumber = 50
-        
-        myBalloons += [firstBall, secondBall, thirdBall, fourthBall]
+        self.createBalloons()
         myImageView.image = myBalloons[currentBalloon].balloonImage
         numberLabel.text = "\(myBalloons[currentBalloon].balloonNumber)"
     }
@@ -63,6 +46,26 @@ class ViewController: UIViewController {
             completion: {
                 (finished: Bool) -> () in
         })
+    }
+    
+    func createBalloons() {
+        for var bCounter=0; bCounter<=99; bCounter++ {
+            var curBalloon = Balloon()
+            curBalloon.balloonNumber = bCounter
+            let randImg = Int(arc4random_uniform(UInt32(4)))
+            switch randImg {
+            case 1:
+                curBalloon.balloonImage = UIImage(named: "1.jpg")
+            case 2:
+                curBalloon.balloonImage = UIImage(named: "2.jpg")
+            case 3:
+                curBalloon.balloonImage = UIImage(named: "3.jpg")
+            default:
+                curBalloon.balloonImage = UIImage(named: "4.jpg")
+            }
+            println(curBalloon)
+            myBalloons.append(curBalloon)
+        }
     }
 
 }
